@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Барбершоп «Бородинский» --- Каталог товаров</title>
+</head>
+<body>
+    <header class="siteHeader">
+        <div class="centeredContainer">
+            <a class="logo" href="#"><img src="img\BarberLogo.jpg" alt="Лого" /></a>
+            <nav class="mainNavigation">
+                <ul>
+                    <li>
+                        <a href="#">ИНФОРМАЦИЯ</a>
+                    </li>
+                    <li>
+                        <a href="#">НОВОСТИ</a>
+                    </li>
+                    <li>
+                        <a href="#">ПРАЙС-ЛИСТ</a>
+                    </li>
+                    <li>
+                        <a href="#">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="#">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="loginBlock">
+                <a class="login" href="#">ВХОД</a>
+            </div>
+        </div>
+    </header>
+    <main class="centeredContainer">
+        <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+        <div class="breadcrumbs">
+            <ul>
+                <li>ГЛАВНАЯ</li>
+                <li>МАГАЗИН</li>
+                <li>СРЕДСТВА ДЛЯ УХОДА</li>
+            </ul>
+        </div>
+        <div class="leftPanel">
+            <form action="" method="post">
+                <h2>ПРОИЗВОДИТЕЛИ:</h2>
+                <ul class="filterList">
+                    <li>
+                        <input type="checkbox" value="Baxter" /><label>BAXTER OF CALIFORNIA</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="Natty" /><label>MR NATTY</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="Suavecito" /><label>SUAVECITO</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="Malin" /><label>MALIN+GOETZ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="Murray" /><label>MURRAY'S</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="AmCrew" /><label>AMERICAN CREW</label>
+                    </li>
+                </ul>
+                <h2>ГРУППЫ ТОВАРОВ:</h2>
+                <ul class="filterList">
+                    <li>
+                        <input type="checkbox" value="Baxter" /><label>BAXTER OF CALIFORNIA</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="Natty" /><label>MR NATTY</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="Suavecito" /><label>SUAVECITO</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="Malin" /><label>MALIN+GOETZ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="Murray" /><label>MURRAY'S</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="AmCrew" /><label>AMERICAN CREW</label>
+                    </li>
+                </ul>
+                <button class="btn" type="submit">ПОКАЗАТЬ</button>
+            </form>
+        </div>
+        <div class="rightPanel">
+            <!-- 
+                Здесь надо, видимо, определять сеточное построение. 
+                Table я ставить не хотел, поставил пока просто div-ы. 
+                Позже поменяю так, как на самом деле должно быть.
+            -->
+            <div class="gallery"> 
+                <div>
+                    <article class="galleryItem">
+                        <img src="img\stock\BaxterTravelKit.jpg" />
+                        <p>Набор для путешествий &lt;&lt;BAXTER OF CALIFORNIA&gt;&gt;</p>
+                        <label class="price">2 900 РУБ.</label>
+                        <button class="btn">КУПИТЬ</button>
+                    </article>
+                    <article class="galleryItem">
+                        <img src="img\stock\BaxterMoisturizingConditioner.jpg" />
+                        <p>Увлажняющий кондиционер &lt;&lt;BAXTER OF CALIFORNIA&gt;&gt;</p>
+                        <label class="price">750 РУБ.</label>
+                        <button class="btn">КУПИТЬ</button>
+                    </article>
+                    <article class="galleryItem">
+                        <img src="img\stock\SuavecitoHairGel.jpg" />
+                        <p>Гель для волос &lt;&lt;SUAVECITO&gt;&gt;</p>
+                        <label class="price">290 РУБ.</label>
+                        <button class="btn">КУПИТЬ</button>
+                    </article>
+                </div>
+                <div>
+                    <article class="galleryItem">
+                        <img src="img\stock\AmericanCrewHairStylingClay.jpg" />
+                        <p>Глина для укладки волос &lt;&lt;AMERICAN CREW&gt;&gt;</p>
+                        <label class="price">500 РУБ.</label>
+                        <button class="btn">КУПИТЬ</button>
+                    </article>
+                    <article class="galleryItem">
+                        <img src="img\stock\AmericanCrewHairGel.jpg" />
+                        <p>Гель для волос &lt;&lt;AMERICAN CREW&gt;&gt;</p>
+                        <label class="price">300 РУБ.</label>
+                        <button class="btn">КУПИТЬ</button>
+                    </article>
+                    <article class="galleryItem">
+                        <img src="img\stock\BaxterShavingKit.jpg" />
+                        <p>Набор для бритья &lt;&lt;BAXTER OF CALIFORNIA&gt;&gt;</p>
+                        <label class="price">3 900 РУБ.</label>
+                        <button class="btn">КУПИТЬ</button>
+                    </article>
+                </div>
+            </div>
+            <button class="btn galleryIndex" value="1">1</button>
+            <button class="btn galleryIndex" value="2">3</button>
+            <button class="btn galleryIndex" value="3">3</button>
+            <button class="btn galleryIndex" value="4">4</button>
+        </div>
+    </main>
+    <footer class="siteFooter">
+        <div class="centeredContainer">
+            <section class="footerContacts">
+                Барбершоп «Бородинский»<br>
+                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                <a href="#">Как нас найти?</a><br>
+                Телефон: +7 (812) 666-02-66
+            </section>
+            <section class="footerSocial">
+                <p>Давайте дружить!</p>
+                <a class="socialBtn socialBtnVK" href="#">Вконтакте</a>
+                <a class="socialBtn socialBtnFB" href="#">Фейсбук</a>
+                <a class="socialBtn socialBtnINST" href="#">Инстаграм</a>
+            </section>
+            <section class="footerCopyright">
+                <p>Разработано:</p>
+                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
