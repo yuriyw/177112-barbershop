@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Барбершоп «Бородинский» --- Набор для путешествий &lt;&lt;BAXTER OF CALIFORNIA&gt;&gt;</title>
+    <title>Барбершоп «Бородинский» --- Набор для путешествий "Baxter of california"</title>
 </head>
 <body>
     <header class="siteHeader">
@@ -12,75 +12,124 @@
             <nav class="mainNavigation">
                 <ul>
                     <li>
-                        <a href="#">ИНФОРМАЦИЯ</a>
+                        <a href="#">Информация</a>
                     </li>
                     <li>
-                        <a href="#">НОВОСТИ</a>
+                        <a href="#">Новости</a>
                     </li>
                     <li>
-                        <a href="#">ПРАЙС-ЛИСТ</a>
+                        <a href="#">Прайс-лист</a>
                     </li>
                     <li>
-                        <a href="#">МАГАЗИН</a>
+                        <a href="#">Магазин</a>
                     </li>
                     <li>
-                        <a href="#">КОНТАКТЫ</a>
+                        <a href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <div class="loginBlock">
-                <a class="login" href="#">ВХОД</a>
+                <a class="login" href="#">Вход</a>
             </div>
         </div>
     </header>
     <main class="centeredContainer">
-        <h1>НАБОР ДЛЯ ПУТЕШЕСТВИЙ &lt;&lt;BAXTER OF CALIFORNIA&gt;&gt;</h1>
-        <div class="breadcrumbs">
-            <ul>
-                <li>ГЛАВНАЯ</li>
-                <li>МАГАЗИН</li>
-                <li>СРЕДСТВА ДЛЯ УХОДА</li>
-                <li>Набор для путешествий &lt;&lt;BAXTER OF CALIFORNIA&gt;&gt;</li>
-            </ul>
-        </div>
+        <h1>Набор для путешествий "Baxter of california"</h1>
+        <ul class="breadcrumbs">
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <a href="#">Магазин</a>
+            </li>
+            <li>
+                <a href="#">Средства для ухода</a>
+            </li>
+            <li>Набор для путешествий "Baxter of california"</li>
+        </ul>
         <div class="leftPanel">
-            <img src="img\stock\BaxterShavingKit.jpg" class="galleryItem gallerySelectedImage"/>
-            <img src="img\stock\BaxterShavingKit1.jpg" class="galleryItem galleryThumbnail" />
-            <img src="img\stock\BaxterShavingKi2.jpg" class="galleryItem galleryThumbnail" />
-            <img src="img\stock\BaxterShavingKit.jpg" class="galleryItem galleryThumbnail" />
+
+            <!--
+            Николай: для маленьких изображений --- тоже блок
+            -->
+            <div class="galleryItem gallerySelectedImage">
+                <img src="img\stock\BaxterShavingKit.jpg" id="selectedImage"/>
+            </div>
+            <ul>
+                <li class="galleryItem galleryThumbnail">
+                    <a href="#">
+                        <img src="img\stock\BaxterShavingKit1.jpg" />
+                    </a>
+                </li>
+                <li class="galleryItem galleryThumbnail">
+                    <a href="#">
+                        <img src="img\stock\BaxterShavingKi2.jpg" />
+                    </a>
+                </li>
+                <li class="galleryItem galleryThumbnail">
+                    <a href="#">
+                        <img src="img\stock\BaxterShavingKit.jpg" />
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="rightPanel">
-            <label>ЕСТЬ В НАЛИЧИИ</label><label class="rightAligned grayed">АРТИКУЛ: DEXTER-AE</label>
+            
+            <!-- Николай: здесь не нужны label, замени их на div -->
+            <div>
+                <label>Есть в наличии</label>
+                <label class="rightAligned grayed">Артикул: DEXTER-AE</label>
+            </div>
+            
+            <!--  Николай: здесь p лучше заменить на div -->
             <p>
-                TRAVEL KIT - НЕОБХОДИМЫЙ АКСЕССУАР ВО ВРЕМЯ ЛЮБОГО ПУТЕШЕСТВИЯ. В АККУРАТНОЙ КОЖАНОЙ СУМКЕ НАХОДИТСЯ ВСЁ, 
-                ЧТО НУЖНО ДЛЯ БРИТЬЯ И УХОДА ЗА КОЖЕЙ ВО ВРЕМЯ РАБОЧЕЙ ПОЕЗДКИ ИЛИ ОТДЫХА: СРЕДСТВО ДЛЯ УМЫВАНИЯ, УВЛАЖНЯЮЩИЙ КРЕМ, КРЕМ ДЛЯ БРИТЬЯ, 
-                КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ. НАБОР ТАКЖЕ МОЖЕТ СТАТЬ ОТЛИЧНЫМ ПОДАРКОМ.
+                Travel kit - необходимый аксессуар во время любого путешествия. в аккуратной кожаной сумке находится всё, 
+                что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, 
+                крем после бритья, шампунь. набор также может стать отличным подарком.
             </p>
-            <label class="price">2 900 РУБ.</label>
-            <button class="btn">КУПИТЬ</button>
-            <h2>В НАБОР ВХОДЯТ:</h2>
-            <ul class="detailsList">
-                <li>СРЕДСТВО ДЛЯ УМЫВАНИЯ (50 МЛ)</li>
-                <li>УВЛАЖНЯЮЩИЙ КРЕМ (50 МЛ)</li>
-                <li>КРЕМ ДЛЯ БРИТЬЯ (50 МЛ)</li>
-                <li>КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ (50 МЛ)</li>
-                <li>УДОБНАЯ КОЖАНАЯ КОСМЕТИЧКА</li>
-            </ul>
-        </div>
+    
+            <div>
+                <!-- Николай: label заменить на div -->
+                <label class="price">2 900 Руб.</label>
+                <a href="#" class="btn">Купить</a>
+            </div>
+
+            <div>
+                <h2>В набор входят:</h2>
+                <ul class="detailsList">
+                    <li>Средство для умывания (50 мл)</li>
+                    <li>Увлажняющий крем (50 мл)</li>
+                    <li>Крем для бритья (50 мл)</li>
+                    <li>Крем после бритья, шампунь (50 мл)</li>
+                    <li>Удобная кожаная косметичка</li>
+                </ul>
+            </div>
+        </div>        
     </main>
     <footer class="siteFooter">
+        <!--
+            Николай: В данном случае .centeredContainer избыточен. Section могут спокойной находится в самом футере
+        -->
         <div class="centeredContainer">
             <section class="footerContacts">
                 Барбершоп «Бородинский»<br>
                 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
                 <a href="#">Как нас найти?</a><br>
-                Телефон: +7 (812) 666-02-66
+                <a href="tel:78126660266">Телефон: +7 (812) 666-02-66</a>
             </section>
             <section class="footerSocial">
                 <p>Давайте дружить!</p>
-                <a class="socialBtn socialBtnVK" href="#">Вконтакте</a>
-                <a class="socialBtn socialBtnFB" href="#">Фейсбук</a>
-                <a class="socialBtn socialBtnINST" href="#">Инстаграм</a>
+                <ul class="socialList">
+                    <li class="socialBtn">
+                        <a class="socialBtnVK" href="#">Вконтакте</a>
+                    </li>
+                    <li class="socialBtn">
+                        <a class="socialBtn socialBtnFB" href="#">Фейсбук</a>
+                    </li>
+                    <li class="socialBtn">
+                        <a class="socialBtn socialBtnINST" href="#">Инстаграм</a>
+                    </li>
+                </ul>
             </section>
             <section class="footerCopyright">
                 <p>Разработано:</p>

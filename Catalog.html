@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<!--
+Те твои замечания, которые я пока не ввёл, сохраняю в виде комментариев в соответствующих местах. 
+Просто мне будет полезно самому позже понять, почему так должно быть.
+-->
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -11,150 +16,187 @@
             <nav class="mainNavigation">
                 <ul>
                     <li>
-                        <a href="#">ИНФОРМАЦИЯ</a>
+                        <a href="#">Информация</a>
                     </li>
                     <li>
-                        <a href="#">НОВОСТИ</a>
+                        <a href="#">Новости</a>
                     </li>
                     <li>
-                        <a href="#">ПРАЙС-ЛИСТ</a>
+                        <a href="#">Прайс-лист</a>
                     </li>
                     <li>
-                        <a href="#">МАГАЗИН</a>
+                        <a href="#">Магазин</a>
                     </li>
                     <li>
-                        <a href="#">КОНТАКТЫ</a>
+                        <a href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <div class="loginBlock">
-                <a class="login" href="#">ВХОД</a>
+                <a class="login" href="#">Вход</a>
             </div>
         </div>
     </header>
     <main class="centeredContainer">
-        <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
-        <div class="breadcrumbs">
-            <ul>
-                <li>ГЛАВНАЯ</li>
-                <li>МАГАЗИН</li>
-                <li>СРЕДСТВА ДЛЯ УХОДА</li>
-            </ul>
-        </div>
+        <h1>Средства для ухода</h1>
+        <ul class="breadcrumbs">
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <a href="#">Магазин</a>
+            </li>
+            <li>Средства для ухода</li>
+        </ul>
         <div class="leftPanel">
             <form action="" method="post">
-                <h2>ПРОИЗВОДИТЕЛИ:</h2>
-                <ul class="filterList">
-                    <li>
-                        <input type="checkbox" value="Baxter" /><label>BAXTER OF CALIFORNIA</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="Natty" /><label>MR NATTY</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="Suavecito" /><label>SUAVECITO</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="Malin" /><label>MALIN+GOETZ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="Murray" /><label>MURRAY'S</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="AmCrew" /><label>AMERICAN CREW</label>
-                    </li>
-                </ul>
-                <h2>ГРУППЫ ТОВАРОВ:</h2>
-                <ul class="filterList">
-                    <li>
-                        <input type="checkbox" value="Baxter" /><label>BAXTER OF CALIFORNIA</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="Natty" /><label>MR NATTY</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="Suavecito" /><label>SUAVECITO</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="Malin" /><label>MALIN+GOETZ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="Murray" /><label>MURRAY'S</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" value="AmCrew" /><label>AMERICAN CREW</label>
-                    </li>
-                </ul>
-                <button class="btn" type="submit">ПОКАЗАТЬ</button>
+                <div class="filterSection">
+                    <h2>Производители:</h2>
+                    <ul class="filterList">
+                        <li>
+                            <input type="checkbox" name="manufacturer1" value="Baxter" /><label>Baxter of california</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="manufacturer2" value="Natty" /><label>Mr natty</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="manufacturer3" value="Suavecito" /><label>Suavecito</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="manufacturer4" value="Malin" /><label>Malin+goetz</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="manufacturer5" value="Murray" /><label>Murray's</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="manufacturer6" value="AmCrew" /><label>American crew</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filterSection">
+                    <h2>Группы товаров:</h2>
+                    <ul class="filterList">
+                        <li>
+                            <input type="checkbox" name="productGroup1" value="Baxter" /><label>Baxter of california</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="productGroup2" value="Natty" /><label>Mr natty</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="productGroup3" value="Suavecito" /><label>Suavecito</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="productGroup4" value="Malin" /><label>Malin+goetz</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="productGroup5" value="Murray" /><label>Murray's</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="productGroup6" value="AmCrew" /><label>American crew</label>
+                        </li>
+                    </ul>
+                    <button class="btn" type="submit">Показать</button>
+                </div>
             </form>
         </div>
         <div class="rightPanel">
-            <!-- 
-                Здесь надо, видимо, определять сеточное построение. 
-                Table я ставить не хотел, поставил пока просто div-ы. 
-                Позже поменяю так, как на самом деле должно быть.
-            -->
             <div class="gallery"> 
-                <div>
-                    <article class="galleryItem">
+                <article class="galleryItem">
+                    <!-- 
+                        Николай: картинку и название товара ещё нужно обернуть в блоки поверх ссылок.
+                    -->
+                    <a href="#">
                         <img src="img\stock\BaxterTravelKit.jpg" />
-                        <p>Набор для путешествий &lt;&lt;BAXTER OF CALIFORNIA&gt;&gt;</p>
-                        <label class="price">2 900 РУБ.</label>
-                        <button class="btn">КУПИТЬ</button>
-                    </article>
-                    <article class="galleryItem">
-                        <img src="img\stock\BaxterMoisturizingConditioner.jpg" />
-                        <p>Увлажняющий кондиционер &lt;&lt;BAXTER OF CALIFORNIA&gt;&gt;</p>
-                        <label class="price">750 РУБ.</label>
-                        <button class="btn">КУПИТЬ</button>
-                    </article>
-                    <article class="galleryItem">
-                        <img src="img\stock\SuavecitoHairGel.jpg" />
-                        <p>Гель для волос &lt;&lt;SUAVECITO&gt;&gt;</p>
-                        <label class="price">290 РУБ.</label>
-                        <button class="btn">КУПИТЬ</button>
-                    </article>
-                </div>
-                <div>
-                    <article class="galleryItem">
-                        <img src="img\stock\AmericanCrewHairStylingClay.jpg" />
-                        <p>Глина для укладки волос &lt;&lt;AMERICAN CREW&gt;&gt;</p>
-                        <label class="price">500 РУБ.</label>
-                        <button class="btn">КУПИТЬ</button>
-                    </article>
-                    <article class="galleryItem">
-                        <img src="img\stock\AmericanCrewHairGel.jpg" />
-                        <p>Гель для волос &lt;&lt;AMERICAN CREW&gt;&gt;</p>
-                        <label class="price">300 РУБ.</label>
-                        <button class="btn">КУПИТЬ</button>
-                    </article>
-                    <article class="galleryItem">
-                        <img src="img\stock\BaxterShavingKit.jpg" />
-                        <p>Набор для бритья &lt;&lt;BAXTER OF CALIFORNIA&gt;&gt;</p>
-                        <label class="price">3 900 РУБ.</label>
-                        <button class="btn">КУПИТЬ</button>
-                    </article>
-                </div>
+                    </a>
+                    <a href="#">Набор для путешествий "Baxter of california"</a>
+                        
+                    <!-- Николай: label заменить на div -->
+                    <div>
+                        <label class="price">2 900 Руб.</label>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
+                </article>
+                <article class="galleryItem">
+                    <img src="img\stock\BaxterMoisturizingConditioner.jpg" />
+                    <p>Увлажняющий кондиционер "Baxter of california"</p>
+                    <div>
+                        <label class="price">750 Руб.</label>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
+                </article>
+                <article class="galleryItem">
+                    <img src="img\stock\SuavecitoHairGel.jpg" />
+                    <p>Гель для волос "SUAVECITO"</p>
+                    <div>
+                        <label class="price">290 Руб.</label>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
+                </article>
+                <article class="galleryItem">
+                    <img src="img\stock\AmericanCrewHairStylingClay.jpg" />
+                    <p>Глина для укладки волос "American crew"</p>
+                    <div>
+                        <label class="price">500 Руб.</label>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
+                </article>
+                <article class="galleryItem">
+                    <img src="img\stock\AmericanCrewHairGel.jpg" />
+                    <p>Гель для волос "American crew"</p>
+                    <div>
+                        <label class="price">300 Руб.</label>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
+                </article>
+                <article class="galleryItem">
+                    <img src="img\stock\BaxterShavingKit.jpg" />
+                    <p>Набор для бритья "Baxter of california"</p>
+                    <div>
+                        <label class="price">3 900 Руб.</label>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
+                </article>
             </div>
-            <button class="btn galleryIndex" value="1">1</button>
-            <button class="btn galleryIndex" value="2">3</button>
-            <button class="btn galleryIndex" value="3">3</button>
-            <button class="btn galleryIndex" value="4">4</button>
+            <ul class="pagination">
+                <li class="btn">
+                    <a href="#" class="paginationLink">1</a>
+                </li>
+                <li class="btn paginationItemActive">
+                    <a href="#" class="paginationLink paginationLinkActive">3</a>
+                </li>
+                <li class="btn">
+                    <a href="#" class="paginationLink">3</a>
+                </li>
+                <li class="btn">
+                    <a href="#" class="paginationLink">4</a>
+                </li>
+            </ul>
         </div>
     </main>
     <footer class="siteFooter">
+        <!-- 
+            Николай: В данном случае .centeredContainer избыточен. Section могут спокойной находится в самом футере 
+        -->
         <div class="centeredContainer">
             <section class="footerContacts">
                 Барбершоп «Бородинский»<br>
                 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
                 <a href="#">Как нас найти?</a><br>
-                Телефон: +7 (812) 666-02-66
+                <a href="tel:78126660266">Телефон: +7 (812) 666-02-66</a>
             </section>
             <section class="footerSocial">
-                <p>Давайте дружить!</p>
-                <a class="socialBtn socialBtnVK" href="#">Вконтакте</a>
-                <a class="socialBtn socialBtnFB" href="#">Фейсбук</a>
-                <a class="socialBtn socialBtnINST" href="#">Инстаграм</a>
+            <p>Давайте дружить!</p>
+            <ul class="socialList">
+                <li class="socialBtn">
+                    <a class="socialBtnVK" href="#">Вконтакте</a>
+                </li>
+                <li class="socialBtn">
+                    <a class="socialBtn socialBtnFB" href="#">Фейсбук</a>
+                </li>
+                <li class="socialBtn">
+                    <a class="socialBtn socialBtnINST" href="#">Инстаграм</a>
+                </li>
+            </ul>
             </section>
             <section class="footerCopyright">
                 <p>Разработано:</p>
